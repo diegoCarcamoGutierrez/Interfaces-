@@ -1,3 +1,4 @@
+import time
 def funcion_fibbonaci(n):
     resu=0
     o=2

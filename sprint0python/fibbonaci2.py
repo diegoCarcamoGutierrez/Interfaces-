@@ -1,5 +1,5 @@
 import math
-
+import time
 
 def funcion_fibbonaci2(n):
     a=(((1+math.sqrt(5))/2))
