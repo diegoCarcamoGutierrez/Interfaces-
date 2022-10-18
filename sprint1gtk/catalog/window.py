@@ -16,15 +16,15 @@ class MainWindow(Gtk.Window):
         self.set_default_size(400, 400)
 
         header = Gtk.HeaderBar(title="Mis cosas favoritas")
-        header.set_subtitle("SIUUU")
+        header.set_subtitle("Asc")
         header.props.show_close_button = True
-
         self.set_titlebar(header)
 
         scrolled = Gtk.ScrolledWindow()
-        scrolled.set_policy(Gtk.PolicyType.NEVER,Gtk.PolicyType.AUTOMATIC)
+        scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         scrolled.add(self.flowbox)
         self.add(scrolled)
+        # Se cargan las imágenes en los objetos correspondientes
         image1 = Gtk.Image()
         pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/MonadoREX+.jpg", 200, 200, False)
         image1.set_from_pixbuf(pixbuf)
@@ -42,7 +42,7 @@ class MainWindow(Gtk.Window):
         image5.set_from_pixbuf(pixbuf)
         cell_one = cell.Cell("Monado REX+", image1)
         cell_two = cell.Cell("Bola Smash", image2)
-        cell_three = cell.Cell("Cello",image3)
+        cell_three = cell.Cell("Cello", image3)
         cell_four = cell.Cell("Oreo", image4)
         cell_five = cell.Cell("Empanadah", image5)
         self.flowbox.add(cell_one)
