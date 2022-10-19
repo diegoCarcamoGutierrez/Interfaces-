@@ -11,6 +11,7 @@ class MainWindow(Gtk.Window):
 
     def __init__(self, data_source):
         super().__init__(title="imágenes")
+        self.set_position(Gtk.WindowPosition.CENTER)
         self.connect("destroy", Gtk.main_quit)
         self.set_border_width(15)
         self.set_default_size(400, 400)
@@ -25,6 +26,7 @@ class MainWindow(Gtk.Window):
         scrolled.add(self.flowbox)
         self.add(scrolled)
 
+        #mostrar en la ventana principal las imágenes
         for item in data_source:
             cell = Cell(item.get("name"), item.get("gtk_image"))
             self.flowbox.add(cell)
