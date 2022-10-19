@@ -1,25 +1,27 @@
-{
-  "name":"Monado REX+",
-  "description":"Esta espada fue diseñada por el mecánico Shulk luego de desaparecer la Monado original"
-  "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/MonadoREX%2B.jpg"
-}
-{
-  "name":"Bola Smash"
-  "description":"Bola que otroga poder inmenso a aquella persona que consiga romperla"
-  "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/bolaSmash.jpg"
-}
-{
-  "name":"Cello"
-  "description":"Instrumento musical propio de la musica de cámara. Resalta por su tamaño y estilo, además de su característico sonido"
-  "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/cello.jpg"
-}
-{
-  "name":"Oreo"
-  "description":"Galletas conocidas por todo el mundo. Tan ricas como dañinas para el estómago"
-  "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/oureol.jpg"
-}
-{
-  "name":"Empanadah"
-  "description":"Dicen que si te venden una empanada en Argentina, podría llevar carne NO animal..."
-  "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/empanadah.jpg"
-}
+[
+  {
+    "name":"Monado REX+",
+    "description":"Esta espada fue diseñada por el mecánico Shulk luego de desaparecer la Monado original",
+    "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/MonadoREX%2B.jpg"
+  },
+  {
+    "name":"Bola Smash",
+    "description":"Bola que otroga poder inmenso a aquella persona que consiga romperla",
+    "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/bolaSmash.jpg"
+  },
+  {
+    "name":"Cello",
+    "description":"Instrumento musical propio de la musica de cámara. Resalta por su tamaño y estilo, además de su característico sonido",
+    "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/cello.jpg"
+  },
+  {
+    "name":"Oreo",
+    "description":"Galletas conocidas por todo el mundo. Tan ricas como dañinas para el estómago",
+    "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/oureol.jpg"
+  },
+  {
+    "name":"Empanadah",
+    "description":"Dicen que si te venden una empanada en Argentina, podría llevar carne NO animal...",
+    "image_url":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/empanadah.jpg"
+  }
+]
