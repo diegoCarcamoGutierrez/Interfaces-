@@ -10,7 +10,7 @@ class YesWindow(Gtk.Window):
 
     def __init__(self):
         super().__init__(title="yesWindow")
-#       self.connect("destroyer", Gtk.main_quit)
+        #       self.connect("destroyer", Gtk.main_quit)
         self.button.connect("clicked", self.on_button_clicked)
         self.add(self.button)
 
