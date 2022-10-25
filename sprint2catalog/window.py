@@ -1,9 +1,5 @@
 import gi
-from gi.repository import GdkPixbuf
-import gtk
-
 import simple_menu
-from simple_menu import SimpleMenu
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -20,6 +16,7 @@ class MainWindow(Gtk.Window):
         self.set_border_width(15)
         self.set_default_size(400, 400)
 
+        #Definición de la pestaña "Help", que se mostrará arriba a la izquierda de la ventana principal
         mb = Gtk.MenuBar()
 
         filemenu = Gtk.Menu()
@@ -27,7 +24,7 @@ class MainWindow(Gtk.Window):
         filem.set_submenu(filemenu)
 
         h = Gtk.MenuItem("About developer")
-        h.connect("activate", show_simple_window)
+        h.connect("activate", show_simple_window) #conexión con el método que enseñará la nueva ventana con la información del desarrolador
         filemenu.append(h)
 
         mb.append(filem)
@@ -51,7 +48,6 @@ class MainWindow(Gtk.Window):
             cell = Cell(item.get("name"), item.get("gtk_image"))
             self.flowbox.add(cell)
 
-
-def show_simple_window():
+def show_simple_window(self):  #Mostrar la ventana con la información del desarrollador (texto libre)
     hwin = simple_menu.SimpleMenu()
     hwin.show_all()
