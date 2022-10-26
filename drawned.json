@@ -1,0 +1,14 @@
+[
+  {
+    "fallos":1,
+    "url_imagen":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/feetDrawned.gif"
+  },
+  {
+    "fallos":2,
+    "url_imagen":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/fullBodyDrawned.gif"
+  },
+  {
+    "fallos":3,
+    "url_imagen":"https://raw.githubusercontent.com/diegoCarcamoGutierrez/Interfaces-/main/revealedDrawned.gif"
+  }
+]
