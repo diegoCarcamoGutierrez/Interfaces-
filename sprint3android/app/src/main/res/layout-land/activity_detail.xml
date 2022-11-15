@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
+    <!--XML para la aplicación en horizontal-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,6 +13,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50sp"
+        app:layout_constraintHorizontal_bias="0.15"
         android:id="@+id/prendaVestir"/>
 <!--CircleImageView muestra una imagen, esta vez en circular-->
     <de.hdodenhof.circleimageview.CircleImageView
@@ -22,26 +24,31 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         android:scaleType="centerCrop"
         android:src="@drawable/zapatillas"
         android:id="@+id/imagen"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imagen"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:text="Zapatillas toas guapardas para las fiestas del pueblo."
-        android:textAlignment="center"/>
-    <!--Botón para dar "me gusta" a las prendas de ropa-->
+        app:layout_constraintStart_toEndOf="@+id/prendaVestir"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:id="@+id/desc"/>
+    
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="me gusta"
-        android:layout_marginStart="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/desc"
+        app:layout_constraintStart_toEndOf="@+id/prendaVestir"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="20dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
