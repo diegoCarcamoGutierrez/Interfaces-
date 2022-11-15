@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class CatalogActivity extends AppCompatActivity {
     private Button catalog_button; //variable botón para la activity_catalog
-    private Context context=this;
+    private Context context=this; //Contexto de la clase. No se puede usar this dentro de una función integrada en un protected void
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
