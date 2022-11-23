@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RequestQueue listQueue;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        listQueue=Volley.newRequestQueue(this);
+
+    }
+
     private void showImages(){
         JsonObjectRequest request= new JsonObjectRequest(
                 Request.Method.GET,
